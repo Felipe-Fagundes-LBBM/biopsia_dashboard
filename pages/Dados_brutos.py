@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 st.title(':blue[Registro de pacientes] :dna:')
 st.subheader('Análise baseada nas relações entre amostra coletada e data do infarto agudo do miocárdio', divider='rainbow')
 
-df = pd.read_excel('panilha_pacientes.xlsx')
+df = pd.read_csv('panilha_pacientes_csv.csv')
 
 # Métrica
 st.metric(label='Total de pacientes', value=df['COD'].count(), help='Número total de pacientes incluídos na pesquisa')
